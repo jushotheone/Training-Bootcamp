@@ -1,0 +1,39 @@
+.mainContainer{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    border: 5px solid red;
+}
+
+.box1{
+    position: relative;
+    height: 400px;
+    background-color: brown;
+    border: 5px solid white;
+    color: white;
+    margin: 25px;
+
+
+}
+.box2{
+        position: absolute;
+        z-index: 1;
+        height: 300px;
+        width: 50%;
+        left: 30px;
+        background-color: blue;
+        border: 5px solid white;
+        color: white;
+        margin: 55px;
+}
+.box3{
+        position: absolute;
+        z-index: 2;
+        height: 200px;
+        background-color: green;
+        border: 5px solid white;
+        color: white;
+        margin: 85px;
+        left: 50px;
+}

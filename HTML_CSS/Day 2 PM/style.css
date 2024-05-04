@@ -1,0 +1,58 @@
+/* Universal selector - selects all elements in the HTML file denoted by asterix */
+
+*{
+    color: rebeccapurple;
+    background-color: burlywood;
+
+}
+
+/* HTML Element Selector */
+h1{
+    color: chocolate;
+    font-family: cursive;
+}
+
+/* Grouping selectors */
+
+h1, h2, p {
+    background-color: orangered;
+}
+
+/* ID selector */
+#idName{
+    text-align: center;
+}
+
+/* Class selector */
+.className{
+    text-align: right;
+}
+/* The CSS box model
+Margin -  Clears an area(outside) around the border,  the margin is transparent
+Border - A border that goes around the padding.
+Padding - Clears an area(inside) around the content, the padding is transparent
+Content - The content of the box, where the text, images or content appear 
+*/
+
+.boxModel{
+    margin: 20px;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+#boxID{
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15;
+    margin-left: 20px;
+
+    border-top: 5px solid green;
+    border-right: 3px dashed yellow;
+    border-bottom: 10px dotted red;
+    border-left: 1px double grey; 
+
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+}

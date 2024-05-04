@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline Elements / Div vs Span</title>
+</head>
+
+<!--
+        HTML Block and Inline Elements:
+    
+        - Every HTML element has a default display value,
+          depending on what type of element it is.
+        - This demo will cover: block and inline.
+         -->
+
+<body>
+    <!--
+        Block Elements:
+    
+        - Block or Block-Level elements start on a new 
+        line and take up the full width available to them.
+         -->
+
+    <!-- Style attribute used to add a background colour -->
+    <h1 style="background-color: red;">Headings are block-level elements</h1>
+    <p style="background-color: pink;">A paragraph is a block-level element.</p>
+
+    <!--
+        <div>:
+    
+        - The <div> is a block-level element and is often used as a container for other HTML elements to organise code.
+         -->
+    <div style=" background-color: Blue;">A div is also a block-level element.</div>
+
+
+    <!-- Inline Elements:
+    
+        - Inline elements do not start on a new line and only take up the necessary width that they require.
+         -->
+    <a href="#">Anchor = Inline</a>
+    <label for="">Label = Inline</label>
+    <input type="text">
+
+
+    <!-- - The <span> tag is an inline container used to mark up a part of a text, or a part of a document. -->
+    <span style="background-color: orange;">A span is an example of an inline element.</span>
+    <span style="background-color: greenyellow;">A span is an example of an inline element.</span>
+    <span style="background-color: yellow;">A span is an example of an inline element.</span>
+
+    <!-- Example: A div being used to contain elements - Block Element Container -->
+    <div class="divExample" style="background-color: red;">
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+    <!-- Example: A span being used to style sections of text within a paragraph - Inline Text Container-->
+    <p>Lorem ipsum dolor sit amet, <span style="color: goldenrod;"> adipisicing elit.</span> Tempora, quis!</p>
+    <!-- https://www.w3schools.com/html/html_blocks.asp -->
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+/* Resources:
+
+MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+w3: https://www.w3schools.com/css/css_positioning.asp
+
+ */
+
+/* Static = Default Postion */
+
+/* Relative - Relative to point of origin 
+offset values top left bottom right/
+*/
+
+.box1 {
+    height: 200px;
+    width: 200px;
+    background-color: dodgerblue;
+    border: solid 2px black;
+    position: relative;
+    /* top: 100px;
+    left: 100px; */
+}
+
+/* Absolute - Taken out of flow of document
+Will search for parent element
+that are NOT POSITION: STATIC
+If not will use viewport
+*/
+
+/* Put box 2 inside box 1 */
+.box1 {
+    height: 200px;
+    width: 200px;
+    background-color: dodgerblue;
+    border: solid 2px black;
+    position: relative;
+    /* bottom: 500px;
+    left: 500px; */
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    border: solid 2px black;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+/* Fixed - As it says fixed postion in viewport / browser*/
+
+.box1 {
+    height: 200px;
+    width: 200px;
+    background-color: dodgerblue;
+    border: solid 2px black;
+    position: fixed;
+    top: 500px;
+    right: 0;
+}
+
+/* Sticky sticks to a point when scrolled past  */
+.box1 {
+    height: 200px;
+    width: 200px;
+    background-color: dodgerblue;
+    border: solid 2px black;
+    position: sticky;
+    top: 0;
+
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    border: solid 2px black;
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: lavender;
+}
+.mortgage-calculator, .mortgage-calculator * {
+    box-sizing: border-box;
+}
+.mortgage-calculator {
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 24px auto;
+}
+
+.mortgage-calculator .top {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: indigo;
+    color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.mortgage-calculator .top h2 {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.mortgage-calculator form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mortgage-calculator title {
+    margin-bottom: 10px;
+}
+
+.mortgage-calculator form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.mortgage-calculator .result {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.mortgage-calculator .result .left {
+    width: 100%;
+    padding: 8px 20px;
+}
+
+.mortgage-calculator .left h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.mortgage-calculator .result .value {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid indigo;
+}
+
+.mortgage-calculator .result .value::before {
+    content: '£';
+    font-weight: 500;
+    margin-right: 5px;
+    opacity: 0.4;
+}
+
+.mortgage-calculator .calculate-button {
+    padding: 10px 20px;
+    background-color: indigo;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.mortgage-calculator .right {
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    .mortgage-calculator {
+        width: 90%;
+        max-width: fit-content;
+    }
+    .mortgage-calculator form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mortgage-calculator .result {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,35 @@
+/* Resources:
+
+MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+w3: https://www.w3schools.com/cssref/pr_class_display.php
+
+ */
+
+img {
+    /* Dipslay can also be set to "none" to "hide" an element. */
+    
+    /* The display property set to none, completely removes the element */
+    /* display: none; */
+    /* display: none; */
+    visibility: hidden;
+
+    height: 50px;
+    width: 50px;
+}
+
+/* You cannot change the width and height of an Inline Element 
+but you can with a Block or Inline-Block element*/
+/* The display value of an element can be changed manually */
+span {
+    display: inline-block;
+    width: 200px;
+}
+
+#blockElement{
+    display: block;
+}
+
+#inlineElement{
+    display: inline;
+}

@@ -1,0 +1,299 @@
+/* Font Import and Base Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Box-Sizing to Border-Box */
+/* This includes padding and border in the H and W of the element */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    border: 3px solid black;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Flexbox Reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* Flexbox Diagram: https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg */
+
+/* Colours for each box */
+
+
+.box1 {
+    background: #ff4757;
+}
+
+.box2 {
+    background: #1e90ff;
+}
+
+.box3 {
+    background: #2ed573;
+}
+
+/* Write Flexbox Code Below: */
+
+/* 
+
+display: flex and flex-direction: 
+
+To turn our container into a flex container
+we give it a display property of flex
+notice how when we save our items are
+next to one another.
+
+This is because flexbox naturally sets
+our flex-direction property to row.
+
+As by defualt the horizontal axis is our main axis.
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+
+
+/* 
+flex-directon: row-reverse
+
+As the name suggests reverses the order
+of our row
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+    /* flex-direction: row-reverse; */
+}
+
+
+
+/* 
+flex-direction: column
+
+This aligns our items on the vertical axis
+in columns
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+    /* flex-direction: column; */
+}
+
+
+/* 
+flex-directon: column-reverse
+
+As we saw with row-reverse this does the
+same but with our columns
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+    /* flex-direction: row-reverse; */
+}
+
+
+
+/* 
+
+flex-wrap:
+
+By adding a flex-wrap value of wrap
+our elements flow over multiple rows
+if required rather than overflowing
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap
+}
+
+
+
+/* 
+justify-content:
+
+justify-content is how we align our
+content on our main axis
+
+When in flex-direction: row this is horizontal
+and in column the main axis is vertical
+
+we have:
+
+flex-start - Left / begining of container (in LtoR Languages)
+flex-end - Right / end of container 
+center - Centers the items horizontally
+space-between - Evenly distributes items with even space between them
+space-around - Similar to space-between but gives a gap at start and end
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+
+/* 
+align-items:
+
+align-items is how we align our
+flex items on our secondary axis
+When in flex-direction: row this is vertical
+and in column the secondary axis is horizontal
+
+we have:
+
+center - Centers the items horizontally
+flex-start - Top of container
+flex-end - Bottom of container
+stretch - Items fill full height of the container
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+/* 
+align-content:
+
+Is basically the justify-content of the secondary axis
+
+This property has no effect if items are on one line
+
+So to show this we need to a flex-wrap: wrap
+
+flex-start - Top of container
+flex-end - Bottom of container 
+center - Centers the content vertically
+space-between - Evenly distributes items with even space between them
+space-around - Similar to space-between but gives a gap at top and bottom
+*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-content: flex-start;
+}
+
+
+
+/* 
+align-self:
+
+we can also use align-self
+to individually align items
+
+*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+
+.box2 {
+    align-self: flex-end;
+}
+
+.box4 {
+    align-self: center;
+}
+
+.box6 {
+    align-self: flex-start;
+}
+
+.box10 {
+    align-self: baseline;
+}
+
+
+/* 
+flex-basis:
+
+with flex-basis we can specify an initial size of 
+an item.
+
+Say we set flex-basis of box1 to 100px it will 
+allow box1 to take up those 100px before
+distributing the rest of the space
+evenly
+
+*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+
+.box1 {
+    flex-basis: 200px;
+}
+
+
+/* 
+flex-grow:
+
+flex grow defines a flex items ability to grow
+if there is space available.
+
+We pass this a number without a unit.
+
+If we pass box1 a flex-grow of 2
+the box will grow at twice the rate of other items
+*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+
+.box1 {
+    flex-grow: 2;
+}
+
+
+/*
+
+flex-shrink:
+
+is basically the opposite of flex-grow
+this determines at what rate the item will shrink
+if there is not enough space for all items
+
+*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+
+.box1 {
+    flex-shrink: 2;
+}

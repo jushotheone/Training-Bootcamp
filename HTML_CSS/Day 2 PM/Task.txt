@@ -1,0 +1,18 @@
+HTML - Day2 PM - Task:
+ 
+Add some CSS styling to either an existing HTML webpage you have worked on, or a new HTML file.
+ 
+You must correctly create and link a CSS Stylesheet to your HTML file and apply some CSS Rules to your webpage.
+ 
+Your CSS file must include examples of:
+ 
+- An element selector
+- A class selector
+- An id selector
+- An imported font (Google Fonts)
+ 
+Alongside use of the following CSS Properties:
+ 
+margin, padding, border, color, background-color and font-family.
+ 
+Experiment with your CSS to see how the properties and values impact the styling of your elements.

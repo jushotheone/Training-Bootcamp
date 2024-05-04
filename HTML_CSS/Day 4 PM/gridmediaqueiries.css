@@ -1,0 +1,62 @@
+[13:54] Abdul Jalloh
+/* grid-area: Determine a grid item's size and location within the
+grid by contributing a line, a span, or nothing (automatic)
+to its grid placement. Shorthand for ' grid-row-start',
+' grid-column-start', ' grid-row-end', and ' grid-column-end'. */
+ 
+/* The name for this grid-area is header */
+.pageHeader {
+    grid-area: header;
+}
+ 
+/* The name for this grid-area is menu */
+.pageMenu {
+    grid-area: menu;
+}
+ 
+/* The name for this grid-area is main*/
+ 
+.pageMain {
+    grid-area: main;
+}
+ 
+/* The name for this grid-area is right*/
+.pageRigth {
+    grid-area: right;
+}
+ 
+/* The name for this grid-area is footer*/
+ 
+.pageFooter {
+    grid-area: footer;
+}
+ 
+/* The name for this grid-area is page container arent element/container/grid*/
+ 
+.pageContainer {
+    /* display element set to inline-grid or grid */
+    display: grid;
+    /* align the grid-areas define in the main/parent container. */
+ 
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main right'
+    'menu menu footer footer footer footer';
+ 
+ 
+    /* specifying the gutters between grid rows and columns. */
+    gap: 12px;
+ 
+    background-color: bisque;
+    padding: 12px;
+ 
+}
+ 
+/*  Select all section elements where the parent element is main */
+.pageContainer>section {
+    text-align: center;
+    background-color: blue;
+    font-size: 30px;
+    color: white;
+ 
+}

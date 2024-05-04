@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <!-- HTML Forms <form>:
+
+        - Used to contain different input elements such as text fields, checkboxes and submit buttons etc.
+        - Opened with a <form> tag.  -->
+
+
+    <!-- The Action attribute allows us to determine how our form information is processed
+        when submitted. As we are currently just structuring our forms we will just pass a hash (#)
+        symbol for now as a placeholder.  -->
+
+    <form action="#">
+
+        <div>
+
+            <!--
+        HTML Forms <label>:
+    
+        - Defines a label for form elements.
+        - The "for" attribute should match the "id" attribute of the relevant <input> element to bind them together.
+
+        List of form label types:
+
+        - https://www.w3schools.com/tags/tag_label.asp
+         -->
+
+            <label for="fname">First Name:</label>
+
+            <!--
+        HTML Forms <input>:
+    
+        - The <input> element takes in a "type" attribute which determines how it is used and displayed.
+        - The below example using "text" provides a text input field.
+        - Other examples of <input> types are: "radio" for a radio button, "submit" for a submit button, "checkbox" for a checkbox and "button" for a standard button.
+
+        List of form input types: 
+
+        - https://www.w3schools.com/html/html_form_input_types.asp
+
+        The "id" attribute is a unique identifier of the HTML element. Must beegin with a letter. Referenced in CSS and JS.
+        The "name" attribute names the HTML element and unlike an "id" does not have to be unique. Referenced in JS but NOT CSS.
+         -->
+
+            <!-- Adding the "required" attribute  to an input will prevent the form from being submitted without data in the input -->
+            <input type="text" id="fname" name="fname" placeholder="first name" required>
+        </div>
+
+        <!-- <br> - Line Break - Creates vertical gap between elements -->
+        <br>
+        <!-- Various input type examples -->
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="last name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="mail@mail.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(07)1-234-56789">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

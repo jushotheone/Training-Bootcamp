@@ -1,0 +1,14 @@
+Day 3 HTML CSS AM - Task:
+
+Using the CSS Position property I would like you to put together an example of a fixed navbar that remains at the top of the viewport when scrolling through a page.
+
+Group Task - Advanced CSS Selectors:
+
+Each breakout room will be assigned a topic, I would like you to research your topic and put together a short demonstration / presentation on it to present to the group later in the session.
+How you demo / explain your topic is up to you to decide as a group. Feel free to share your screen and do a code-along demo or explain it using a presentation of some sort. Please ensure that you organise amongst yourselves who will share their screen and who will present what.
+We will be coming back into the main meeting room at 11:45am in order to run through the presentations.
+
+--Room 1: Pseudo-Elements
+--Room 2: nth-child Selector
+--Room 3: Pseudo-Classes
+--Room 4: Attribute Selectors

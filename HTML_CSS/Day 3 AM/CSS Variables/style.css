@@ -1,0 +1,85 @@
+/*
+
+CSS Variables:
+
+- CSS Variables can used to store values that we use in CSS.
+- Variables allow us to reuse the stored values throughout our CSS by referencing the variable name.
+
+Syntax:
+
+- To declare a CSS Variable we use to hyphens followed by the desired variable name.
+- The variable name is followed by a semi-colon, aftwr which we define our varaible.
+
+Example: 
+--color-one: #3f84e5
+
+*/
+
+/* 
+The :root selector matches the document's root element.
+In HTML, the root element is always the <html> element.
+Declaring our CSS Variables in the root element allows them to be read by all other elements.
+*/
+
+:root {
+    --color-one: #3f84e5;
+    --color-two: #b33951;
+    --margin: 10px;
+    --padding: 10px;
+    --AMJ: red;
+    --BlueColour: blue;
+    --innnerSqueeze: 10px;
+    --hello: blue;
+    --emFontSize: 20em;
+    --remFontSize: 20rem;
+    --pxFontSize: 50px;
+
+}
+
+/* We can use our variables by passing the the relevant CSS property a value of var(--varaible-name) */
+
+.aTest{
+    --this: rgb(221, 255, 0);
+    background-color: var(--this);
+    font-size: var(--emFontSize);
+
+}
+
+.one {
+    --this: rgb(0, 255, 149);
+    background-color: var(--color-one);
+    color: var(--color-two);
+    margin: var(--margin);
+    padding: var(--padding);
+    border:  50px solid var(--this);
+    font-size: var(--remFontSize);
+}
+
+/* We can still use standard CSS alongside a CSS variable */
+/* We can also declare a new value for our variable if needed and it is overwritten in our chosen instance  */
+.two {
+    /* --color-two: black; */
+    background-color: var(--color-two);
+    color: var(--color-one);
+    margin: var(--margin);
+    padding: var(--padding);
+
+}
+
+#three{
+    background-color: var(--AMJ) ;
+    color: var(--BlueColour);
+    border: 2px solid var(--color-one);
+    padding: var(--innnerSqueeze);
+    font-size: 4rem;
+}
+
+#four{
+    padding: 10px;
+    color: var(--hello);
+    font-size: var(--pxFontSize);
+}
+/* 
+We can also redeclare our variables in our :root element and this will effect every instance of the variable.
+Meaning that we do not to change each element individually.
+ */
